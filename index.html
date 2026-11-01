@@ -60,6 +60,12 @@ header{padding:12px 12px 0;position:relative}
 #formVenda.grid input{display:block;box-sizing:border-box;max-width:100%;min-width:0;width:100%}
 #formVenda.grid input[type="date"]{-webkit-appearance:none;appearance:none;min-width:0;max-width:100%;font-size:16px;padding-left:8px;padding-right:4px}
 @media(max-width:360px){#formVenda.grid{column-gap:7px}#formVenda.grid label{font-size:12px}}
+
+/* Correção iPhone: campo Data da aba Despesas sem ultrapassar o cartão */
+#formDespesa, #formDespesa .grid, #formDespesa .grid > div {min-width:0;max-width:100%;}
+#formDespesa input, #formDespesa select {display:block;width:100%;max-width:100%;min-width:0;box-sizing:border-box;}
+#formDespesa input[type="date"] {display:block;width:100%;max-width:100%;min-width:0;box-sizing:border-box;-webkit-appearance:none;appearance:none;font-size:16px;padding-left:10px;padding-right:10px;}
+#despesas .panel {min-width:0;overflow:hidden;}
 </style></head><body><header><img class="brand-logo" src="logo-cabecalho.jpg" alt="Logo oficial Delícias da Lore"></header><main class="wrap">
 <section id="inicio"><div class="shortcuts"><button class="shortcut" data-goto="vendas"><span class="shortcut-icon">♧</span>Vendas</button><button class="shortcut" data-goto="clientes"><span class="shortcut-icon">♙</span>Clientes</button><button class="shortcut" data-goto="doces"><span class="shortcut-icon">🧁</span>Doces</button><button class="shortcut" data-goto="despesas"><span class="shortcut-icon">▦</span>Despesas</button></div><div class="dashboard-title"><h2>Resumo do Mês</h2><select class="month-tag" id="mesDashboard" aria-label="Escolher mês"></select></div><div id="dashboard" class="summary-grid"></div><div id="resumo"></div><button class="report-cta" data-goto="relatorios">▥ &nbsp; Relatórios</button><div class="notice">📱 Funciona sem internet depois de instalado. Faça backups regularmente: dados salvos apenas no navegador podem ser apagados pelo iPhone.</div></section>
 <section id="clientes" class="hidden"><div class="panel"><h2>Cadastrar cliente</h2><form id="formCliente"><label>Nome</label><input name="nome" required maxlength="120"><label>Telefone (opcional)</label><input name="telefone" type="tel"><div class="actions"><button>Salvar cliente</button></div></form></div><div class="panel"><h2>Clientes cadastrados</h2><div id="listaClientes"></div></div></section>
