@@ -1,9 +1,5 @@
-DELÍCIAS DA LORE — Instalação no iPhone
-
-1. Publique o conteúdo desta pasta na raiz de um site HTTPS (ex.: GitHub Pages).
-2. Abra o endereço publicado no Safari do iPhone com internet.
-3. Toque em Compartilhar > Adicionar à Tela de Início > Adicionar.
-4. Abra pelo ícone e teste o funcionamento sem internet (modo avião).
-5. Faça backups regularmente em Relatórios > Exportar backup.
-
-Dados ficam somente no navegador do aparelho. Apagar dados do Safari, remover o app ou problemas no dispositivo podem causar perda.
+DELÍCIAS DA LORE — atualização 2
+Substitua todos os arquivos no mesmo repositório GitHub Pages. Não altere o endereço do site.
+Antes de atualizar, exporte um backup em Relatórios.
+Dados locais permanecem no mesmo armazenamento enquanto a origem e os dados do Safari forem preservados.
+Após publicar, abra o app online e reinicie-o para receber o novo cache.
