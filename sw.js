@@ -1,5 +1,5 @@
 // DELICIAS DA LORE - cache v11. Preserva dados locais (localStorage).
-const CACHE='delicias-da-lore-offline-v13';
+const CACHE='delicias-da-lore-offline-v14';
 const ASSETS=['./index.html','./manifest.webmanifest','./icon-512.png','./logo-oficial.jpg','./logo-cabecalho.jpg'];
 self.addEventListener('install',event=>{
   event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(ASSETS)).then(()=>self.skipWaiting()));
