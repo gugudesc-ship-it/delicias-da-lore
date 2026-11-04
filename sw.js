@@ -1,5 +1,5 @@
-// DELICIAS DA LORE - cache v15. Preserva dados locais (localStorage).
-const CACHE='delicias-da-lore-offline-v15';
+// DELICIAS DA LORE - cache v16. Preserva dados locais (localStorage).
+const CACHE='delicias-da-lore-offline-v16';
 const ASSETS=['./index.html','./manifest.webmanifest','./icon-512.png','./logo-oficial.jpg','./logo-cabecalho.jpg'];
 self.addEventListener('install',event=>{
   event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(ASSETS)).then(()=>self.skipWaiting()));
